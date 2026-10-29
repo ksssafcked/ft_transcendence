@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr" class="xxs:text-[12px] xs:text-[14px] xl:text-[20px] xxl:text-[24px] overflow-x-hidden">
+    <head>
+        <title>Transcendence</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" href="/public/images/favicon.svg" type="image/svg+xml">
+        <link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body
+        class="
+            sp:pb-[4rem]
+            st:pl-[4rem]
+            sc:pt-[4rem]
+        "
+    >
+        <!-- Header rendu par header.ts -->
+        <header
+            id="header"
+            class="
+                fixed z-[50] flex justify-between
+                card backdrop-blur-[1rem]
+
+                sp:bottom-0 sp:left-0 sp:right-0  sp:h-[4rem] sp:w-[100%] sp:flex-row sp:border-t-[0.125rem] sp:pt-[0.875rem]
+                st:left-0   st:top-0  st:bottom-0 st:w-[4rem] st:h-[100%] st:flex-col st:border-r-[0.125rem] st:pr-[0.875rem]
+                sc:top-0    sc:left-0 sc:right-0  sc:h-[4rem] sc:w-[100%] sc:flex-row sc:border-b-[0.125rem] sc:pb-[0.875rem]
+            "
+        ></header>
+
+        <!-- Contenu des pages -->
+        <main
+            id="app"
+            class="
+                z-[10]
+
+                sp:min-h-[calc(100vh-4rem)]
+                st:min-h-[100vh]
+                sc:min-h-[calc(100vh-4rem)]
+            "
+        ></main>
+
+        <div
+            id="chat"
+            class="
+        "></div>
+
+        <footer
+            id="footer"
+            class="
+                z-[10] text-center
+                flex flex-row flex-wrap justify-around
+                p-[1rem] gap-[1rem]
+            "
+        ></footer>
+
+        <div
+            id="background"
+            class="
+                fixed inset-0 z-[-10]
+            "
+        ></div>
+
+        <script type="module" src="scripts/main.js"></script>
+    </body>
+</html>

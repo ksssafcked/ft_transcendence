@@ -1,0 +1,18 @@
+{
+    "scripts": {
+        "build:client_ts": "tsc -p tsconfig.client.json",
+        "build:server_ts": "tsc -p tsconfig.server.json",
+        "build:css":       "tailwindcss -i ./src/styles/style.css -o ./dist/style.css",
+        "build:html":      "cp ./src/index.html ./dist/index.html",
+        "build:public":    "cp -r ./src/public ./dist/public",
+        "build":           "npm run build:client_ts && npm run build:server_ts && npm run build:css && npm run build:html && npm run build:public",
+        "start":           "node dist/server.js"
+    },
+    "devDependencies": {
+        "typescript":   "^5.0.0",
+        "tailwindcss":  "^3.4.0",
+        "postcss":      "^8.4.0",
+        "autoprefixer": "^10.4.0",
+        "@types/node": "^20.0.0"
+    }
+}
